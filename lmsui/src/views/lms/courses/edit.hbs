@@ -1,0 +1,105 @@
+<div class="text-right">
+    <h1 class="text-center"> Edit {{list.componentName}}</h1>
+
+    <hr />
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="card">
+            <div class="card-body">
+
+                <div class="table-responsive">
+                     <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                        <input type="hidden" id="omg2" name="custId" value="{{list.id}}">
+                          <input type="hidden" id="omg3" name="custId" value="{{list.appId}}">
+
+                            <div class="col-md-6 mb-3">
+                                <label for="appName">Component Name</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="componentName"
+                                        placeholder="Component Name" aria-describedby="appNamePrepend" value="{{list.componentName}}" required>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ip">Type</label>
+                                <select type="text" class="form-control" id="type" placeholder="Type" required>
+                                    <option value="{{list.type}}">{{list.type}}</option>
+                                    <option value="Web">Web</option>
+                                    <option value="Api">Api</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="ip">Asset</label>
+                                <select type="text" class="form-control" id="assetId" placeholder="Asset" required>
+                                    {{#each asset}}
+                                    <option value="{{id}}">{{assetName}}</option>
+                                    {{/each}}
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="contactPerson">location</label>
+                                <input type="text" class="form-control" id="location" value="{{list.location}}" placeholder="location" required>
+
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="contactPerson">Url</label>
+                                <input type="text" class="form-control" id="url" value="{{list.url}}" placeholder="url" required>
+
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="status">Port</label>
+                                <input type="text" class="form-control" id="port" value="{{list.port}}" placeholder="port" required>
+
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="status">Status</label>
+                                <select type="text" class="form-control" id="status" placeholder="Status"
+                                    required>
+
+                                    {{#if list.status }}
+                                     <option value="{{list.status}}">Active</option>
+                                      <option value="0">Inactive</option>
+                                       {{else}}
+
+                                      <option value="{{list.status}}">Inactive</option>
+                                       <option value="1">Active</option>
+                                    {{/if}}
+                                
+                                </select>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid status.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close
+                            </button>
+                            <button class="btn btn-warning pull-right" id="updatecomp" type="button">Update form</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

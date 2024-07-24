@@ -1,0 +1,120 @@
+<div class="row">
+
+    <div class="col-md-8">
+        <div class="card card-form">
+            <div class="row no-gutters">
+                <div class="col-lg-4 card-body">
+                    <p><strong class="headings-color">Manage Survey Questions</strong></p>
+                    <p class="text-muted mb-0">Setup New Survey.</p>
+                </div>
+                <div class="col-lg-8 card-form__body card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="question">Question</label>
+                            <textarea id="question" rows="4" class="form-control" placeholder="question ..."></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="a1">Ans1</label>
+                                    <input id="a1" type="text" class="form-control" placeholder="Ans1">
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="a2">Ans2</label>
+                                    <input id="a2" type="text" class="form-control" placeholder="Ans2">
+                                </div>
+                            </div>
+
+                            <input id="surveyId" type="hidden" class="form-control" placeholder="Ans2"
+                                value="{{surveyId}}">
+
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="ptype">Personality Type</label><br />
+                                    <select id="ptype" class="custom-select w-auto">
+                                        <option value="EI">EI</option>
+                                        <option value="SN">SN</option>
+                                        <option value="TF">TF</option>
+                                        <option value="JP">JP</option>
+                                    </select>
+                                    <small class="form-text text-muted">The course wont be visible if set to draft
+                                        mode</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="status">Status</label><br />
+                                    <select id="status" class="custom-select w-auto">
+                                        <option value="1">Publish</option>
+                                        <option value="0">Draft</option>
+                                    </select>
+                                    <small class="form-text text-muted">The survey wont be visible if set to
+                                        draft</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-right mb-5">
+                            <button class="btn btn-success" id="submitquestions" type="button">Submit form</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <!-- Lessons -->
+        <div class="card">
+            <div class="card-header card-header-large bg-light d-flex align-items-center">
+                <div class="flex">
+                    <h4 class="card-header__title">Questions</h4>
+                    <div class="card-subtitle text-muted">Manage Questions</div>
+                </div>
+                <div class="ml-auto">
+                    {{!-- <a href="student-courses.html" class="btn btn-primary">New <i
+                            class="material-icons">add</i></a> --}}
+                </div>
+            </div>
+
+            <div style="height: 440px; overflow: auto">
+                <ul class="list-group list-group-fit">
+                    {{#each list}}
+                    <li class="list-group-item">
+
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="material-icons text-light-gray">list</i>
+                                </a>
+                            </div>
+
+                            <div class="media-body">
+                                <a href="#">{{question}}</a>
+                            </div>
+                            <div class="media-right">
+                                <small class="text-muted">3:33</small>
+                            </div>
+
+                        </div>
+
+                    </li>
+                    {{/each}}
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

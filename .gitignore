@@ -1,0 +1,6 @@
+lmsbcknd/node_modules
+lmsbcknd/config/config.env
+lmsbcknd/package-lock.json
+lmsui/node_modules/
+lmsui/config/config.env
+lmsui/package-lock.json

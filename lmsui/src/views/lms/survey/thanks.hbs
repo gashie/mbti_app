@@ -1,0 +1,94 @@
+
+	<div class="text-center">
+	<header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
+	</header>
+
+	<div class="main-content">
+		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+		<p class="main-content__body" data-lead-id="main-content-body">Your personality type is: {{result}}</p>
+	</div>
+	
+		<table class="table table-striped">
+			<tr>
+				<th>#</th>
+				<th>Rank</th>
+				<th>#</th>
+			</tr>
+			<tr>
+				<td>E {{break.e}}%</td>
+				<td>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" style="width:{{break.e}}%">
+						Extroverts
+						</div>
+						<div class="progress-bar progress-bar-warning" role="progressbar" style="width:{{break.i}}%">
+							Introverts
+						</div>
+
+					</div>
+				</td>
+				<td>I {{break.i}}%</td>
+			</tr>
+			<tr>
+				<td> S {{break.s}}%</td>
+				<td>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" style="width:{{break.s}}%">
+							Sensors
+						</div>
+							<div class="progress-bar progress-bar-success" role="progressbar" style="width:{{break.n}}%">
+							Intuitives
+						</div>
+						
+
+						
+
+						
+
+						
+
+					</div>
+				</td>
+				<td> N {{break.n}}%</td>
+			</tr>
+			<tr>
+				<td>T {{break.t}}%</td>
+				<td>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{break.t}}%">
+							Thinkers
+						</div>
+						<div class="progress-bar progress-bar-warning" role="progressbar" style="width:{{break.f}}%">
+							Feelers
+						</div>
+
+					</div>
+				</td>
+				<td> F {{break.f}}%</td>
+			</tr>
+				<tr>
+				<td> J {{break.j}}%</td>
+				<td>
+					<div class="progress">
+						<div class="progress-bar progress-bar-success" role="progressbar" style="width:{{break.j}}%">
+							Judgers
+						</div>
+						<div class="progress-bar progress-bar-primary" role="progressbar" style="width:{{break.p}}%">
+							Percievers
+						</div>
+
+					</div>
+				</td>
+				<td> P {{break.p}}%</td>
+			</tr>
+		</table>
+		    <iframe src="/assets/pdf/mbti.pdf#toolbar=0" width="100%" height="500px">
+    </iframe>
+		{{!-- <img src="/surveryassets/img/result.jpg" style="width:500px;height:600px;"/> --}}
+		
+	</div>
+	<div class="text-center">
+		 <a href="/logout" class=" btn btn-warning btn-theme text-uppercase">Close</a>
+	</div>
+	</div>

@@ -1,0 +1,135 @@
+      <div class="row card-group-row">
+                    {{!-- <div class="col-lg-4 col-md-6 card-group-row__col">
+                        <div class="card card-group-row__card card-body card-body-x-lg flex-row align-items-center">
+                            <div class="flex">
+                                <div class="card-header__title text-muted mb-2">Current Month</div>
+                                <div class="text-amount">&dollar;12,920</div>
+                                <div class="text-stats text-success">31.5% <i class="material-icons">arrow_upward</i></div>
+                            </div>
+
+                            <div class="avatar">
+                                <span class="bg-soft-success avatar-title rounded-circle text-center text-success">
+                                    <i class="material-icons icon-40pt">gps_fixed</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="col-lg-4 col-md-6 card-group-row__col">
+                        <div class="card card-group-row__card card-body card-body-x-lg flex-row align-items-center">
+                            <div class="flex">
+                                <div class="card-header__title text-muted mb-2">Total Personalities</div>
+                                <div class="text-amount">{{totals.totalps}}</div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 card-group-row__col">
+                        <div class="card card-group-row__card card-body card-body-x-lg flex-row align-items-center">
+                            <div class="flex">
+                                <div class="card-header__title text-muted mb-2">Completed Survey</div>
+                                <div class="text-amount">{{totalusers.totalusers}}</div>
+                    
+                            </div>
+                            <div class="avatar">
+                                <span class="bg-soft-warning avatar-title rounded-circle text-center text-warning">
+                                    <i class="material-icons text-warning icon-40pt">perm_identity</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHART -->
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <div class="card">
+                          <div class="table-responsive border-bottom" data-toggle="lists"
+                data-lists-values='["js-lists-values-employee-name"]'>
+
+                <div class="search-form search-form--light m-3">
+                    <input type="text" class="form-control search" placeholder="Search">
+                    <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+                </div>
+                <button id="button-excel" class="btn btn-warning"> <i class="material-icons mr-1">print</i> Print To Excel</button>
+                 
+                <div style="height: 400px; overflow: auto">
+                    <table id="simpleTable1" class="table mb-0 thead-border-top-0">
+                        <thead>
+                            <tr>
+
+                                {{!-- <th>ID</th> --}}
+
+
+                                <th style="">FulllName</th>
+                                <th style="">Email</th>
+                                <th style="">Result</th>
+                                <th style="">Satus</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="staff02">
+                            {{#each resultData}}
+                            <tr>
+
+                                
+
+
+
+                                  <td><span class="js-lists-values-employee-name"><small>{{name}}</small></span>
+                                </td>
+                                <td><span class="js-lists-values-employee-email">{{email}}</span></td>
+                                <td>{{result}}</td>
+                                <td>{{#if status}}
+                                    <span class="badge badge-success">Completed</span>
+                                    
+                                    {{/if}}
+                                </td>
+                                
+                            </tr>
+                            {{/each}}
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header card-header-large bg-light d-flex align-items-center">
+
+                                <h4 class="card-header__title">Top Personalities</h4>
+
+                            </div>
+
+
+
+                              <div style="height: 440px; overflow: auto">
+
+                            <ul class="list-group list-group-flush mb-0" style="z-index: initial;">
+
+                                <li class="list-group-item" style="z-index: initial;">
+                                    {{#each psdata}}
+                                    <div class="d-flex align-items-center">
+                                      
+                                        <div class="flex">
+                                            <a href="#" class="text-body"><strong>{{result}}</strong></a>
+                                            
+                                        </div>
+                                        <div class="ml-3">
+                                           {{total}}
+                                        </div>
+                                    </div>
+                                    {{/each}}
+                                </li>
+
+                         
+
+                            </ul>
+                              </div>        
+                        </div>
+
+                    </div>
+                </div>

@@ -1,0 +1,169 @@
+<div class="row">
+
+    <div class="col-md-8">
+        <div class="card card-form">
+            <div class="row no-gutters">
+                <div class="col-lg-4 card-body">
+                    <p><strong class="headings-color">Manage Lessons Category</strong></p>
+                    <p class="text-muted mb-0">Setup New Lesson.</p>
+                </div>
+                <div class="col-lg-8 card-form__body card-body">
+
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input id="title" type="text" class="form-control" placeholder="Title">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="country">Type</label><br />
+                                    <select id="country" class="custom-select w-auto">
+                                        <option value="video">Video</option>
+                                        <option value="article">Article</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="desc">Description</label>
+                            <textarea id="desc" rows="4" class="form-control" placeholder="description ..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Status</label><br />
+                            <select id="country" class="custom-select w-auto">
+                                <option value="1">Active</option>
+                                <option value="0">Inactive</option>
+                            </select>
+                            <small class="form-text text-muted">If active the category will be visible</small>
+                        </div>
+                        <div class="text-right mb-5">
+                            <a href="#" class="btn btn-success">Save</a>
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+        <!-- Lessons -->
+        <div class="card">
+            <div class="card-header card-header-large bg-light d-flex align-items-center">
+                <div class="flex">
+                    <h4 class="card-header__title">Lessons</h4>
+                    <div class="card-subtitle text-muted">Manage Lessons</div>
+                </div>
+                <div class="ml-auto">
+                    {{!-- <a href="student-courses.html" class="btn btn-primary">New <i
+                            class="material-icons">add</i></a> --}}
+                </div>
+            </div>
+
+
+            <ul class="list-group list-group-fit">
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Overview</a>
+                        </div>
+                        <div class="media-right">
+                            <small class="text-muted">3:33</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Asset Pipeline</a>
+                        </div>
+                        <div class="media-right">
+                            <small>18:43</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Getting Started</a>
+                            <small class="badge badge-soft-success ">FREE</small>
+                        </div>
+                        <div class="media-right">
+                            <small class="text-muted">5:21</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Advanced Workflows</a>
+                            <small class="badge badge-soft-warning ">PRO</small>
+                        </div>
+                        <div class="media-right">
+                            <small class="text-muted">5:24</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Tips & Tricks</a>
+                            <small class="badge badge-soft-warning ">PRO</small>
+                        </div>
+                        <div class="media-right">
+                            <small class="text-muted">11:38</small>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <i class="material-icons text-light-gray">list</i>
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">Final Quiz</a>
+                        </div>
+                        <div class="media-right">
+                            <small class="badge badge-soft-primary ">QUIZ</small>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

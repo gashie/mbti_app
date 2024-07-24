@@ -1,0 +1,90 @@
+<div class="card card-form">
+    <div class="row no-gutters">
+        <div class="col-lg-4 card-body">
+            <p><strong class="headings-color">Content Information</strong></p>
+            <p class="text-muted mb-0">Create new content.</p>
+        </div>
+        <div class="col-lg-8 card-form__body card-body">
+            <form>
+                    <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input id="title" type="text" class="form-control" placeholder="Title" value="Adrian">
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="form-group">
+                        <label>Video Preview</label>
+                        <div class="dz-clickable media align-items-center" data-toggle="dropzone"
+                            data-dropzone-url="http://" data-dropzone-clickable=".dz-clickable"
+                            data-dropzone-files='["assets/images/account-add-photo.svg"]'>
+                            <div class="dz-preview dz-file-preview dz-clickable mr-3">
+                                <div class="avatar avatar-lg">
+                                    <img src="/assets/images/account-add-photo.svg" class="avatar-img rounded" alt="..."
+                                        data-dz-thumbnail>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <button class="btn btn-sm btn-light dz-clickable">Choose video</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label>Resource</label>
+                        <div class="dz-clickable media align-items-center" data-toggle="dropzone"
+                            data-dropzone-url="http://" data-dropzone-clickable=".dz-clickable"
+                            data-dropzone-files='["assets/images/account-add-photo.svg"]'>
+                            <div class="dz-preview dz-file-preview dz-clickable mr-3">
+                                <div class="avatar avatar-lg">
+                                    <img src="/assets/images/account-add-photo.svg" class="avatar-img rounded" alt="..."
+                                        data-dz-thumbnail>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <button class="btn btn-sm btn-light dz-clickable">Choose resource</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="desc">Description</label>
+                <textarea id="description" rows="4" class="form-control" placeholder="description ..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="desc">Note</label>
+                <textarea id="note" rows="4" class="form-control" placeholder="note ..."></textarea>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="country">Status</label><br />
+                        <select id="country" class="custom-select w-auto">
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                        <small class="form-text text-muted">The content wont be visible if set to Inactive</small>
+                    </div>
+                </div>
+          
+            </div>
+            <div class="text-right mb-5">
+                <a href="#" class="btn btn-success">Save</a>
+            </div>
+
+
+            </form>
+        
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="text-right">
+    <a href="/dashboard/survey/create" class="btn btn-success ml-lg-3">New Survey <i
+            class="material-icons">arrow_forward</i></a>
+</div>
+<br/>
+<div class="card card-form">
+    <div class="row no-gutters">
+        <div class="col-lg-4 card-body">
+            <p><strong class="headings-color">Search</strong></p>
+            <p class="text-muted">List of all surveys created</p>
+        </div>
+        <div class="col-lg-8 card-form__body">
+
+            <div class="table-responsive border-bottom" data-toggle="lists"
+                data-lists-values='["js-lists-values-employee-name"]'>
+
+                <div class="search-form search-form--light m-3">
+                    <input type="text" class="form-control search" placeholder="Search">
+                    <button class="btn" type="button" role="button"><i class="material-icons">search</i></button>
+                </div>
+                <div style="height: 350px; overflow: auto">
+                    <table class="table mb-0 thead-border-top-0">
+                        <thead>
+                            <tr>
+
+                                {{!-- <th>ID</th> --}}
+
+
+                                <th style="">Title</th>
+                                <th style="">Description</th>
+                                <th style="">Status</th>
+                                <th style="">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list" id="staff02">
+                            {{#each list}}
+                            <tr>
+
+                                {{!-- <td>
+
+                                    <span class="js-lists-values-employee-name">{{id}}</span>
+
+                                </td>  --}}
+
+
+
+                                <td><span class="js-lists-values-employee-name"><small>{{title}}</small></span>
+                                </td>
+                                <td>{{description}}</td>
+                                <td>{{#if status}}
+                                    <span class="badge badge-success">Active</span>
+                                    {{else}}
+                                    <span class="badge badge-danger">In-active</span>
+                                    {{/if}}
+                                </td>
+                                <td> <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                                        aria-expanded="false"> Activity<span class="caret"></span> </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="/dashboard/questions/create/{{id}}">Create
+                                            Questions</a>
+                                        <a class="dropdown-item" href="/editsurvey/{{id}}">Edit</a>
+                                      
+                                        <a class="dropdown-item" id="delete" onClick="deletesurvey(`{{id}}`)">Delete</a>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            {{/each}}
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

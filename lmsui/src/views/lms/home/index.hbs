@@ -1,0 +1,160 @@
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+	
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- intro block -->
+			<section class="intro-block">
+				<div class="slider fade-slider">
+					<div>
+						
+						<!-- intro block slide -->
+						<article class="intro-block-slide overlay bg-cover" style="background-image: url(/homeasset/images/img01.jpg);">
+							<div class="align-wrap container">
+								<div class="align">
+									<div class="anim">
+										<h1 class="intro-block-heading">ESFP</h1>
+									</div>
+									<div class="anim delay1">
+										
+										<p>Spend more time smiling than frowning and more time praising than criticizing.</p>
+									</div>
+									<div class="anim delay2">
+										<div class="btns-wrap">
+								 {{#if user}}
+								 	 <a href="/study" class=" btn btn-warning btn-theme text-uppercase">Study</a>
+									   	 <a href="/logout" class=" btn btn-warning btn-theme text-uppercase">Logout</a>
+									  {{else}}
+									  <a href="#popup1" class="lightbox btn btn-warning btn-theme text-uppercase">Login</a>
+								{{/if}}
+								
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div>
+						<!-- intro block slide -->
+						<article class="intro-block-slide overlay bg-cover" style="background-image: url(/homeasset/images/img01.jpg);">
+							<div class="align-wrap container">
+								<div class="align">
+									<div class="anim">
+										<h1 class="intro-block-heading">ISFP</h1>
+									</div>
+									<div class="anim delay1">
+										<p>What I respect most in people is naturalness and authenticity. I like to be able to see into their soul. I aspire to being a truthful person.</p>
+									</div>
+									<div class="anim delay2">
+										<div class="btns-wrap">
+										 {{#if user}}
+								 	 <a href="/study" class=" btn btn-warning btn-theme text-uppercase">Study</a>
+									   <a href="/logout" class=" btn btn-warning btn-theme text-uppercase">Logout</a>
+									  {{else}}
+									  <a href="#popup1" class="lightbox btn btn-warning btn-theme text-uppercase">Login</a>
+								{{/if}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div>
+						<!-- intro block slide -->
+						<article class="intro-block-slide overlay bg-cover" style="background-image: url(/homeasset/images/img01.jpg);">
+							<div class="align-wrap container">
+								<div class="align">
+									<div class="anim">
+										<h1 class="intro-block-heading">ESFJ</h1>
+									</div>
+									<div class="anim delay1">
+										<p>I have an inherent need to be all things to all people, to make certain everybody’s taken care of.</p>
+									</div>
+									<div class="anim delay2">
+										<div class="btns-wrap">
+											 {{#if user}}
+								 	 <a href="/study" class=" btn btn-warning btn-theme text-uppercase">Study</a>
+									   <a href="/logout" class=" btn btn-warning btn-theme text-uppercase">Logout</a>
+									  {{else}}
+									  <a href="#popup1" class="lightbox btn btn-warning btn-theme text-uppercase">Login</a>
+								{{/if}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="container">
+					<!-- features aside -->
+					<aside class="features-aside">
+						<a href="#" class="col">
+							<span class="icn-wrap text-center no-shrink">
+								<img src="/homeasset/images/icon01.svg" width="44" height="43" alt="trophy">
+							</span>
+							<div class="description">
+								<h2 class="features-aside-heading">Business</h2>
+								<span class="view-more element-block ">Understand your employees’ strengths, weaknesses and the way they perceive and process information</span>
+							</div>
+						</a>
+						<a href="#" class="col">
+							<span class="icn-wrap text-center no-shrink">
+								<img src="/homeasset/images/icon02.svg" width="43" height="39" alt="computer">
+							</span>
+							<div class="description">
+								<h2 class="features-aside-heading">Teams</h2>
+								<span class="view-more element-block ">Communicate easier with your team as you will understand how each person works best and what they need to do their job well</span>
+							</div>
+						</a>
+						<a href="#" class="col">
+							<span class="icn-wrap text-center no-shrink">
+								<img src="/homeasset/images/icon03.svg" width="43" height="39" alt="computer">
+							</span>
+							<div class="description">
+								<h2 class="features-aside-heading">Manager</h2>
+								<span class="view-more element-block ">And as a manager, you will have an easier time communicating with team members because you will understand how each person works best and what they need to do their job well.</span>
+							</div>
+						</a>
+					</aside>
+				</div>
+			</section>
+		
+		
+	
+		
+	
+	
+		</main>
+		<!-- footer area container -->
+
+		<!-- back top of the page -->
+		<span id="back-top" class="text-center fa fa-caret-up"></span>
+		<!-- loader of the page -->
+		<div id="loader" class="loader-holder">
+			<div class="block"><img src="/homeasset/images/svg/hearts.svg" width="100" alt="loader"></div>
+		</div>
+	</div>
+	<div class="popup-holder">
+		<div id="popup1" class="lightbox-demo">
+			<form action="/login" method="post" class="user-log-form" autocomplete="off">
+				<h2>Login Form</h2>
+				<div class="form-group">
+					<input type="text" class="form-control element-block" id="username" name="username" placeholder="Desktop Username *" required>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control element-block" placeholder="Password *" id="password" name="password" required>
+				</div>
+				<div class="btns-wrap">
+					<div class="wrap">
+					
+						<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Login</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+	
+	</div>
